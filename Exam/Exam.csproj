@@ -1,0 +1,117 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="icon.ico" />
+    <None Remove="Images\delete.png" />
+    <None Remove="Images\Блескдлягуб_BeautyBomb.jpg" />
+    <None Remove="Images\Бронзер_ByTerry.jpg" />
+    <None Remove="Images\Консиллер_InfluenceBeauty.jpg" />
+    <None Remove="Images\Крем_Бархатныеручки.jpeg" />
+    <None Remove="Images\парфюм_Bugatti.jpg" />
+    <None Remove="Images\Парфюм_ChloeChloe.jpg" />
+    <None Remove="Images\Парфюм_COCOChanel.jpg" />
+    <None Remove="Images\парфюм_Dior.jpg" />
+    <None Remove="Images\парфюм_Gucci.jpg" />
+    <None Remove="Images\парфюм_Lacoste.jpg" />
+    <None Remove="Images\Парфюм_MaisonMargiela.jpg" />
+    <None Remove="Images\парфюм_MarcJacobs.jpg" />
+    <None Remove="Images\Парфюм_TomFord.jpg" />
+    <None Remove="Images\помада_Dior.jpg" />
+    <None Remove="Images\помада_Victoria%27sSecret.jpg" />
+    <None Remove="Images\Помада_VivienneSabo.png" />
+    <None Remove="Images\тени_GiorgioArmani.jpg" />
+    <None Remove="Images\тени_urban.jpg" />
+    <None Remove="Images\тональныйкрем_BelorDesignNude.jpg" />
+    <None Remove="Images\тушь_L%27OrealParis.jpg" />
+    <None Remove="Pages\back.png" />
+    <None Remove="Pages\logo.png" />
+    <None Remove="Pages\order.png" />
+    <None Remove="Pages\user.png" />
+    <None Remove="Pages\yourOrders.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Data.SqlClient" Version="5.2.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Images\icon.ico" />
+    <Resource Include="Images\delete.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\Блескдлягуб_BeautyBomb.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\Бронзер_ByTerry.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\Консиллер_InfluenceBeauty.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\Крем_Бархатныеручки.jpeg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\парфюм_Bugatti.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\Парфюм_ChloeChloe.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\Парфюм_COCOChanel.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\парфюм_Dior.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\парфюм_Gucci.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\парфюм_Lacoste.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\Парфюм_MaisonMargiela.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\парфюм_MarcJacobs.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\Парфюм_TomFord.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\помада_Dior.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\помада_Victoria'sSecret.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\Помада_VivienneSabo.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\тени_GiorgioArmani.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\тени_urban.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\тональныйкрем_BelorDesignNude.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\тушь_L'OrealParis.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\back.png" />
+    <Resource Include="Images\order.png" />
+    <Resource Include="Images\user.png" />
+    <Resource Include="Images\yourOrders.png" />
+    <Resource Include="Images\logo.png" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,61 @@
+﻿<Page x:Class="Exam.Pages.ShopPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Exam.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="500" d:DesignWidth="1000"
+      Title="Магазин"
+      FocusManager.FocusedElement="{x:Null}"
+      GotFocus="Page_GotFocus"
+      Loaded="Page_Loaded">
+
+    <DockPanel Background="#FFFFCC99">
+        <DockPanel VerticalAlignment="Top" DockPanel.Dock="Top">
+            <Button x:Name="BackButton" Click="BackButton_Click">
+                <Image Source="/Images/back.png" Height="26"/>
+            </Button>
+            <Label Content="Ароматный Мир" FontWeight="Bold" FontStyle="Italic"/>
+            <Image Height="34" Source="/Images/logo.png"/>
+            <Button DockPanel.Dock="Right" x:Name="orderButton" Click="OrderButton_Click" Visibility="Hidden">
+                <Image Source="/Images/order.png" Width="30"/>
+            </Button>
+            <Label x:Name="CurrentUserLabel" DockPanel.Dock="Right" Width="200"/>
+            <Button x:Name="GoToYourOrders" Click="GoToYourOrders_Click" DockPanel.Dock="Right">
+                <Image Source="/Images/user.png" Width="30"/>
+            </Button>
+            <TextBox x:Name="searchTextBox" Text="Найти в Ароматном мире" GotFocus="SearchTextBox_GotFocus" VerticalContentAlignment="Center"/>
+        </DockPanel>
+        <Label x:Name="searchedProductNameLabel" Width="100" DockPanel.Dock="Top" HorizontalAlignment="Left" Height="30"/>
+        <StackPanel DockPanel.Dock="Top" Orientation="Horizontal">
+            <Label x:Name="searchedProductsCount" Width="70" Content="20 из 20"/>
+            <Label Content="Цена:"/>
+            <ComboBox x:Name="SortComboBox" SelectedIndex="0">
+                <ComboBox.Resources>
+                    <SolidColorBrush x:Key="{x:Static SystemColors.WindowBrushKey}" Color="#FFFFCC99" />
+                    <SolidColorBrush x:Key="{x:Static SystemColors.HighlightBrushKey}" Color="#FFFFCC99" />
+                </ComboBox.Resources>
+                <ComboBoxItem Content="Цена по возратанию"/>
+                <ComboBoxItem Content="Цена по убыванию"/>
+            </ComboBox>
+            <Label Content="Скидка:"/>
+            <ComboBox x:Name="DiscountFilterComboBox" SelectedIndex="3">
+                <ComboBox.Resources>
+                    <SolidColorBrush x:Key="{x:Static SystemColors.WindowBrushKey}" Color="#FFFFCC99" />
+                    <SolidColorBrush x:Key="{x:Static SystemColors.HighlightBrushKey}" Color="#FFFFCC99" />
+                </ComboBox.Resources>
+                <ComboBoxItem Content="0-9,99%"/>
+                <ComboBoxItem Content="10-14,99%"/>
+                <ComboBoxItem Content="15% и более"/>
+                <ComboBoxItem Content="Все диапазоны"/>
+            </ComboBox>
+        </StackPanel>
+        <ScrollViewer CanContentScroll="True" Background="White">
+            <GroupBox>
+                <StackPanel x:Name="productsStackPanel">
+                </StackPanel>
+            </GroupBox>
+        </ScrollViewer>
+    </DockPanel>
+</Page>
